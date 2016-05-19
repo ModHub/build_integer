@@ -1,8 +1,7 @@
+[![Build Status](https://travis-ci.org/ModHub/build_integer.svg?branch=master)](https://travis-ci.org/ModHub/build_integer)
 # BuildInteger
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/build_integer`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Tracks the current build count with a .build-number file.
 
 ## Installation
 
@@ -22,7 +21,22 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+  # start
+  BuildInteger.find # finds or creates a .build-number file and returns the current build number
+  # > 10
+  BuildInteger.increment # increases the number by 1
+  # > 11
+  BuildInteger.decrement # decreases the number by 1
+  # > 10
+  BuildInteger.set 5 # set the build number to 5
+  # > 5
+  BuildInteger.current # returns the current build number
+  # > 5
+  BuildInteger.reset # sets the build number to 10
+  # > 0
+
+```
 
 ## Development
 
@@ -32,10 +46,11 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/build_integer.
-
+1. Fork repository
+2. Make your changes
+3. write some tests
+4. Send a PR
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
