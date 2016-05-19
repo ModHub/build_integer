@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = "Tracks a build number in a .build-number file in your repository"
   spec.description   = "Helps you keep track of the current build number by
                         keeping a .build-number file in your repository."
-  spec.homepage      = "" # put github
+  spec.homepage      = "https://github.com/ModHub/build_integer"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
