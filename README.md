@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/ModHub/build_integer.svg?branch=master)](https://travis-ci.org/ModHub/build_integer)
+[![Build Status](https://travis-ci.org/ModHub/build_integer.svg?branch=master)](https://travis-ci.org/ModHub/build_integer) [![Gem Version](https://badge.fury.io/rb/build_integer.svg)](https://badge.fury.io/rb/build_integer)
 # BuildInteger
 
 Tracks the current build count with a .build-number file.
